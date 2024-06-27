@@ -81,30 +81,35 @@ function Combate() {
 
 function ResultadoCombate() {
     if (vidasJugador == 0) {
-        CrearMensajeFinal("🎉🎉🎉🎉🎉🎉🎉 Gantaste 🎉🎉🎉🎉🎉🎉🎉");
+        CrearMensajeFinal("🎉🎉🎉 🎉 Gantaste 🎉🎉🎉🎉");
     }
     else if (vidasEnemigo == 0) {
-        CrearMensajeFinal("☠️☠️☠️☠️☠️☠️☠️ Perdiste ☠️☠️☠️☠️☠️☠️☠️");
+        CrearMensajeFinal("☠️☠️☠️☠️ Perdiste ☠️☠️☠️☠️");
     }
 
 }
 
 function CrearMensaje(resultado) {
-    let sectionMensajes = document.getElementById('Mensajes');
+    let sectionMensajes = document.getElementById('Resultado');
+    let AtaquesDelJugador = document.getElementById('Ataques-Del-Jugador');
+    let AtaquesDelEnemigo = document.getElementById('Ataques-Del-Enemigo');
 
-    let parrafo = document.createElement('p');
-    parrafo.innerHTML = 'Tu mascota ataco con '+ ataqueJugador +', las mascota del enemigo ataco con '+ ataqueEnemigo + resultado ;
+    let nuevoAtaqueDeljugador = document.createElement('p');
+    let nuevoAtaquesDelEnemigo = document.createElement('p');
 
-    sectionMensajes.appendChild(parrafo);
+    sectionMensajes.innerHTML = resultado
+    nuevoAtaqueDeljugador.innerHTML = ataqueJugador
+    nuevoAtaquesDelEnemigo.innerHTML = ataqueEnemigo
+    
+
+    AtaquesDelJugador.appendChild(nuevoAtaqueDeljugador);
+    AtaquesDelEnemigo.appendChild(nuevoAtaquesDelEnemigo);
 }
 
 function CrearMensajeFinal(resultadoFinal) {
-    let sectionMensajes = document.getElementById('Mensajes');
+    let sectionMensajes = document.getElementById('Resultado');
 
-    let parrafo = document.createElement('p');
-    parrafo.innerHTML = resultadoFinal;
-
-    sectionMensajes.appendChild(parrafo);
+    sectionMensajes.innerHTML = resultadoFinal;
 
     let botonFuego = document.getElementById('boton-fuego');
     botonFuego.disabled = true;
@@ -121,7 +126,7 @@ function seleccionarMascotaJugador() {
     sectionSeleccionarMascota.style.display = 'none';
 
     let sectionSeleccionarAtaque = document.getElementById('seleciconar-ataque');
-    sectionSeleccionarAtaque.style.display = 'block';
+    sectionSeleccionarAtaque.style.display = 'flex';
 
     let inputhipodoge = document.getElementById('Hipodoge');
     let inputCapipepo = document.getElementById('Capipepo');

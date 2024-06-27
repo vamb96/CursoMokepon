@@ -43,6 +43,7 @@ body {
     cursor: pointer;
     border: 2px solid #9B86BD;
 }
+
 .tarjeta-de-mokepon img {
     width: 80px;
 }
@@ -64,7 +65,6 @@ body {
     border-color: #F4A261;
 }
 
-
 input {
     display: none;
 }
@@ -82,4 +82,42 @@ input {
     font-style: normal;
     margin-top: 40px;
     
+}
+
+#seleciconar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #11468f;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#Mensajes {
+    width: 280px;
+    background: #37B7C3;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #11468f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
