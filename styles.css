@@ -43,11 +43,12 @@ body {
     cursor: pointer;
     border: 2px solid #9B86BD;
 }
+
 .tarjeta-de-mokepon img {
     width: 80px;
 }
 
-.tarjetas{
+.tarjetas, .botones-de-ataque{
     display: flex;
     gap: 10px;
 }
@@ -64,9 +65,15 @@ body {
     border-color: #F4A261;
 }
 
-
 input {
     display: none;
+}
+
+input:checked + label{
+	height: 15vh;
+	border-radius: 30px;
+	background-color: rgba(136,188,209,.8);
+	color: #082432;
 }
 
 #boton-mascota {
@@ -82,4 +89,69 @@ input {
     font-style: normal;
     margin-top: 40px;
     
+}
+
+#seleciconar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color: #11468f;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+
+}
+
+#Mensajes {
+    width: 280px;
+    background: #37B7C3;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #11468f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemgio {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .botones-de-ataque {
+        flex-direction: column;
+    }
+
 }
