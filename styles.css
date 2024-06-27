@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #041562;
+  }
+
+#seleciconar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    color: white;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 24px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #11468f;
+    padding: 10px;
+    box-sizing: border-box;  
+    border-radius: 14px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #9B86BD;
+}
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+#TarjetaHipodoge:hover {
+    border-color: #3ABEF9;
+}
+
+#TarjetaCapipepo:hover {
+    border-color: #729762;
+}
+
+#TarjetaRatigueya:hover {
+    border-color: #F4A261;
+}
+
+
+input {
+    display: none;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 40px;
+    
+}
